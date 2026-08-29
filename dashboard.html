@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🏠 Amar Bashar Hishab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="brand">🏠 <span>Amar Basha</span></div><div><button id="langBtn" class="ghost">English</button><button id="logout" class="ghost">Logout</button></div></div>
+<main class="container">
+<section class="hero"><div><span class="eyebrow">🏠 AMAR BASHAR HISHAB</span><h1 id="tenantName">Tenant</h1><p id="tenantFlat" class="muted">—</p></div><button id="pdfBtn" class="primary">📄 Download Statement PDF</button></section>
+<div class="grid">
+<div class="stat"><span>Monthly Rent</span><strong id="rent">৳0</strong></div>
+<div class="stat"><span>Service Charge</span><strong id="service">৳0</strong></div>
+<div class="stat"><span>Other Expense</span><strong id="other">৳0</strong></div>
+<div class="stat due"><span>Total Due</span><strong id="due">৳0</strong></div>
+</div>
+<section class="card"><div class="section-head"><h2>📢 <span data-i18n="notices">Notices</span></h2></div><div id="notices"></div></section>
+<section class="card"><h2>🧾 Payment History</h2><div id="history" class="table-wrap"></div></section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
