@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🏠 Amar Basha | Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="brand">🏠 <span>Amar Basha</span></div><button id="langBtn" class="ghost">English</button></div>
+<main class="auth-wrap">
+<section class="auth-card">
+<div class="logo">🏠</div>
+<h1 data-i18n="welcome">Amar Basha</h1>
+<p class="muted" data-i18n="subtitle">বাসার ভাড়া ও হিসাব ব্যবস্থাপনা</p>
+<div class="tabs"><button class="tab active" data-tab="login" data-i18n="login">Login</button><button class="tab" data-tab="register" data-i18n="register">Register</button></div>
+<form id="loginForm">
+<input id="loginEmail" type="email" placeholder="Email" required>
+<input id="loginPassword" type="password" placeholder="Password" required>
+<button class="primary" type="submit" data-i18n="login">Login</button>
+</form>
+<form id="registerForm" class="hidden">
+<input id="regName" placeholder="Full name" required>
+<input id="regFlat" placeholder="Flat / Room" required>
+<input id="regPhone" placeholder="Mobile number" required>
+<input id="regEmail" type="email" placeholder="Email" required>
+<input id="regPassword" type="password" minlength="6" placeholder="Password (6+ characters)" required>
+<button class="primary" type="submit" data-i18n="createAccount">Create Tenant Account</button>
+</form>
+<div id="msg" class="message"></div>
+</section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
