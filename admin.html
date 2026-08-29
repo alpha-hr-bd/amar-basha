@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🏠 Amar Basha | Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="brand">🏠 <span>Amar Basha</span></div><div><button id="langBtn" class="ghost">English</button><button id="logout" class="ghost">Logout</button></div></div>
+<main class="container">
+<section class="hero"><div><span class="eyebrow">🏠 AMAR BASHA</span><h1>Admin Panel</h1><p class="muted">Bariwala Management Dashboard</p></div><button id="allPdfBtn" class="primary">📄 All Reports PDF</button></section>
+<div class="grid">
+<div class="stat"><span>Total Tenants</span><strong id="totalTenants">0</strong></div>
+<div class="stat"><span>Expected Rent</span><strong id="expectedRent">৳0</strong></div>
+<div class="stat"><span>Service Charge</span><strong id="expectedService">৳0</strong></div>
+<div class="stat due"><span>Total Due</span><strong id="totalDue">৳0</strong></div>
+</div>
+<section class="card">
+<div class="section-head"><h2>👥 Tenants</h2><button id="addTenantBtn" class="primary">＋ Add Tenant</button></div>
+<div id="tenantTable" class="table-wrap"></div>
+</section>
+<section class="card">
+<div class="section-head"><h2>📢 Notices</h2><button id="addNoticeBtn" class="primary">＋ Add Notice</button></div>
+<div id="adminNotices"></div>
+</section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal">×</button><h2 id="modalTitle">Add</h2><form id="modalForm"></form></div></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
